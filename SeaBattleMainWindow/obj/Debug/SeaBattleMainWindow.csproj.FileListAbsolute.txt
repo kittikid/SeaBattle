@@ -1,0 +1,24 @@
+C:\Курсовая\Компонент\SeaBattle\SeaBattleMainWindow\bin\Debug\SeaBattleMainWindow.dll
+C:\Курсовая\Компонент\SeaBattle\SeaBattleMainWindow\bin\Debug\SeaBattleMainWindow.pdb
+C:\Курсовая\Компонент\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.csproj.AssemblyReference.cache
+C:\Курсовая\Компонент\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.csproj.CoreCompileInputs.cache
+C:\Курсовая\Компонент\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.dll
+C:\Курсовая\Компонент\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.pdb
+C:\Users\andre\OneDrive\Рабочий стол\Компонент\SeaBattle\SeaBattleMainWindow\bin\Debug\SeaBattleMainWindow.dll
+C:\Users\andre\OneDrive\Рабочий стол\Компонент\SeaBattle\SeaBattleMainWindow\bin\Debug\SeaBattleMainWindow.pdb
+C:\Users\andre\OneDrive\Рабочий стол\Компонент\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.csproj.AssemblyReference.cache
+C:\Users\andre\OneDrive\Рабочий стол\Компонент\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Рабочий стол\Компонент\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.dll
+C:\Users\andre\OneDrive\Рабочий стол\Компонент\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.pdb
+C:\Users\andre\Desktop\Компонент\SeaBattle\SeaBattleMainWindow\bin\Debug\SeaBattleMainWindow.dll
+C:\Users\andre\Desktop\Компонент\SeaBattle\SeaBattleMainWindow\bin\Debug\SeaBattleMainWindow.pdb
+C:\Users\andre\Desktop\Компонент\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.csproj.AssemblyReference.cache
+C:\Users\andre\Desktop\Компонент\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\Компонент\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.dll
+C:\Users\andre\Desktop\Компонент\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.pdb
+C:\Users\andre\Desktop\Компонент — тест\SeaBattle\SeaBattleMainWindow\bin\Debug\SeaBattleMainWindow.dll
+C:\Users\andre\Desktop\Компонент — тест\SeaBattle\SeaBattleMainWindow\bin\Debug\SeaBattleMainWindow.pdb
+C:\Users\andre\Desktop\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.csproj.AssemblyReference.cache
+C:\Users\andre\Desktop\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.dll
+C:\Users\andre\Desktop\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.pdb
