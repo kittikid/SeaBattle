@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cell.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="SeaBattleMainWindow.cs">
       <SubType>Component</SubType>

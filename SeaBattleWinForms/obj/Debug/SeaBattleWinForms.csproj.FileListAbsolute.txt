@@ -52,3 +52,43 @@ C:\Users\andre\Desktop\Компонент — тест\SeaBattle\SeaBattleWinFor
 C:\Users\andre\Desktop\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.csproj.CopyComplete
 C:\Users\andre\Desktop\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.exe
 C:\Users\andre\Desktop\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.pdb
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.csprojAssemblyReference.cache
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.exe
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.pdb
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleWinForms\bin\Debug\SeaBattleWinForms.exe.config
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleWinForms\bin\Debug\SeaBattleWinForms.exe
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleWinForms\bin\Debug\SeaBattleWinForms.pdb
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleWinForms\bin\Debug\SeaBattleMainWindow.dll
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleWinForms\bin\Debug\SeaBattleMainWindow.pdb
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.Form1.resources
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.Properties.Resources.resources
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.csproj.GenerateResource.cache
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.csproj.CoreCompileInputs.cache
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.csproj.CopyComplete
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\bin\Debug\SeaBattleWinForms.exe.config
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\bin\Debug\SeaBattleWinForms.exe
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\bin\Debug\SeaBattleWinForms.pdb
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\bin\Debug\SeaBattleMainWindow.dll
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\bin\Debug\SeaBattleMainWindow.pdb
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.csproj.AssemblyReference.cache
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.csproj.SuggestedBindingRedirects.cache
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.Form1.resources
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.Properties.Resources.resources
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.csproj.GenerateResource.cache
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.csproj.CopyComplete
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.exe
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.pdb
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.csprojAssemblyReference.cache
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.exe
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.pdb
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\bin\Debug\SeaBattleWinForms.exe.config
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\bin\Debug\SeaBattleWinForms.exe
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\bin\Debug\SeaBattleWinForms.pdb
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\bin\Debug\SeaBattleMainWindow.dll
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\bin\Debug\SeaBattleMainWindow.pdb
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.Form1.resources
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.Properties.Resources.resources
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.csproj.GenerateResource.cache
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleWinForms\obj\Debug\SeaBattleWinForms.csproj.CopyComplete

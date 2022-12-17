@@ -37,11 +37,16 @@ namespace SeaBattleWinForms
             this.labelText = new System.Windows.Forms.Label();
             this.labelOrientation = new System.Windows.Forms.Label();
             this.labelInfo = new System.Windows.Forms.Label();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.ChangeBackColor = new System.Windows.Forms.Button();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.ChangeFontColor = new System.Windows.Forms.Button();
             this.seaBattleMainWindow = new SeaBattle.SeaBattleMainWindow();
             this.SuspendLayout();
             // 
             // StartGame
             // 
+            this.StartGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.StartGame.Location = new System.Drawing.Point(440, 435);
             this.StartGame.Name = "StartGame";
             this.StartGame.Size = new System.Drawing.Size(150, 50);
@@ -52,6 +57,7 @@ namespace SeaBattleWinForms
             // 
             // PlayerRandomButton
             // 
+            this.PlayerRandomButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PlayerRandomButton.Location = new System.Drawing.Point(273, 501);
             this.PlayerRandomButton.Name = "PlayerRandomButton";
             this.PlayerRandomButton.Size = new System.Drawing.Size(150, 50);
@@ -62,6 +68,7 @@ namespace SeaBattleWinForms
             // 
             // BotRandomButton
             // 
+            this.BotRandomButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BotRandomButton.Location = new System.Drawing.Point(440, 501);
             this.BotRandomButton.Name = "BotRandomButton";
             this.BotRandomButton.Size = new System.Drawing.Size(150, 50);
@@ -72,6 +79,7 @@ namespace SeaBattleWinForms
             // 
             // PlacementShips
             // 
+            this.PlacementShips.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PlacementShips.Location = new System.Drawing.Point(605, 501);
             this.PlacementShips.Name = "PlacementShips";
             this.PlacementShips.Size = new System.Drawing.Size(150, 50);
@@ -107,25 +115,55 @@ namespace SeaBattleWinForms
             this.labelInfo.TabIndex = 7;
             this.labelInfo.Text = "Для смены ориентации нажмите Z";
             // 
+            // ChangeBackColor
+            // 
+            this.ChangeBackColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ChangeBackColor.Location = new System.Drawing.Point(628, 399);
+            this.ChangeBackColor.Name = "ChangeBackColor";
+            this.ChangeBackColor.Size = new System.Drawing.Size(127, 40);
+            this.ChangeBackColor.TabIndex = 8;
+            this.ChangeBackColor.Text = "Поменять цвет фона";
+            this.ChangeBackColor.UseVisualStyleBackColor = true;
+            this.ChangeBackColor.Click += new System.EventHandler(this.ChangeBackColor_Click);
+            // 
+            // ChangeFontColor
+            // 
+            this.ChangeFontColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ChangeFontColor.Location = new System.Drawing.Point(628, 445);
+            this.ChangeFontColor.Name = "ChangeFontColor";
+            this.ChangeFontColor.Size = new System.Drawing.Size(127, 40);
+            this.ChangeFontColor.TabIndex = 9;
+            this.ChangeFontColor.Text = "Поменять цвет и стиль текста";
+            this.ChangeFontColor.UseVisualStyleBackColor = true;
+            this.ChangeFontColor.Click += new System.EventHandler(this.ChangeFontColor_Click);
+            // 
             // seaBattleMainWindow
             // 
             this.seaBattleMainWindow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.seaBattleMainWindow.isPlaying = false;
             this.seaBattleMainWindow.Location = new System.Drawing.Point(0, 0);
             this.seaBattleMainWindow.Margin = new System.Windows.Forms.Padding(0);
+            this.seaBattleMainWindow.MaximumSize = new System.Drawing.Size(779, 569);
+            this.seaBattleMainWindow.MinimumSize = new System.Drawing.Size(779, 596);
             this.seaBattleMainWindow.Name = "seaBattleMainWindow";
             this.seaBattleMainWindow.Orientation = false;
-            this.seaBattleMainWindow.Size = new System.Drawing.Size(779, 597);
+            this.seaBattleMainWindow.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.seaBattleMainWindow.Size = new System.Drawing.Size(779, 596);
             this.seaBattleMainWindow.TabIndex = 0;
             this.seaBattleMainWindow.Text = "seaBattleMainWindow1";
-            this.seaBattleMainWindow.Click += new System.EventHandler(this.PlacementShipsPlayer);
+            this.seaBattleMainWindow.UserBackColor = System.Drawing.Color.LightBlue;
+            this.seaBattleMainWindow.UserFontColor = System.Drawing.Color.Black;
+            this.seaBattleMainWindow.UserFontFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.seaBattleMainWindow.DragDrop += new System.Windows.Forms.DragEventHandler(this.PlacementShipsPlayer);
             this.seaBattleMainWindow.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PlayerShoot);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 597);
+            this.ClientSize = new System.Drawing.Size(779, 596);
+            this.Controls.Add(this.ChangeFontColor);
+            this.Controls.Add(this.ChangeBackColor);
             this.Controls.Add(this.labelInfo);
             this.Controls.Add(this.labelOrientation);
             this.Controls.Add(this.labelText);
@@ -136,6 +174,8 @@ namespace SeaBattleWinForms
             this.Controls.Add(this.seaBattleMainWindow);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
+            this.MaximumSize = new System.Drawing.Size(795, 635);
+            this.MinimumSize = new System.Drawing.Size(795, 635);
             this.Name = "Form1";
             this.Text = "SeaBattle";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDownOrientation);
@@ -154,6 +194,10 @@ namespace SeaBattleWinForms
         private System.Windows.Forms.Label labelText;
         private System.Windows.Forms.Label labelOrientation;
         private System.Windows.Forms.Label labelInfo;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.Button ChangeBackColor;
+        private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.Button ChangeFontColor;
     }
 }
 

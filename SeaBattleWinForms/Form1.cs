@@ -13,6 +13,13 @@ namespace SeaBattleWinForms
                 labelOrientation.Text = "горизонтальная";
             else
                 labelOrientation.Text = "вертикальная";
+
+            // расширенное окно для выбора цвета
+            colorDialog1.FullOpen = true;
+            // установка начального цвета для colorDialog
+            colorDialog1.Color = this.BackColor;
+            // добавляем возможность выбора цвета шрифта
+            fontDialog1.ShowColor = true;
         }
         
         private void CreatePlayerShipsRandom(object sender, EventArgs e)
@@ -62,10 +69,10 @@ namespace SeaBattleWinForms
             seaBattleMainWindow.Shoot(sender, e);
         }
 
-        private void PlacementShipsPlayer(object sender, EventArgs e)
-        {
-            seaBattleMainWindow.PlacementShipsPlayer(MousePosition);
-        }
+        //private void PlacementShipsPlayer(object sender, EventArgs e)
+        //{
+        //    seaBattleMainWindow.PlacementShipsPlayer(MousePosition);
+        //}
 
         private void KeyDownOrientation(object sender, KeyEventArgs e)
         {
@@ -75,6 +82,32 @@ namespace SeaBattleWinForms
                 labelOrientation.Text = "горизонтальная";
             else
                 labelOrientation.Text = "вертикальная";
+        }
+
+        private void PlacementShipsPlayer(object sender, DragEventArgs e)
+        {
+            seaBattleMainWindow.PlacementShipsPlayer(MousePosition);
+        }
+
+        private void ChangeBackColor_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.Cancel)
+                return;
+            // установка цвета формы
+            seaBattleMainWindow.UserBackColor = colorDialog1.Color;
+        }
+
+        private void ChangeFontColor_Click(object sender, EventArgs e)
+        {
+            if (fontDialog1.ShowDialog() == DialogResult.Cancel)
+                return;
+            // установка минимальных и максимальных значений шрифта
+            fontDialog1.MaxSize = 14;
+            fontDialog1.MinSize = 8;
+            // установка шрифта
+            seaBattleMainWindow.UserFontFont = fontDialog1.Font;
+            // установка цвета шрифта
+            seaBattleMainWindow.UserFontColor = fontDialog1.Color;
         }
 
         //private void seaBattleMainWindow_DragOver(object sender, DragEventArgs e)

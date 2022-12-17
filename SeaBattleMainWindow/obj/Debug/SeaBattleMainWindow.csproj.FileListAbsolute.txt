@@ -22,3 +22,21 @@ C:\Users\andre\Desktop\Компонент — тест\SeaBattle\SeaBattleMainWi
 C:\Users\andre\Desktop\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.csproj.CoreCompileInputs.cache
 C:\Users\andre\Desktop\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.dll
 C:\Users\andre\Desktop\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.pdb
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleMainWindow\bin\Debug\SeaBattleMainWindow.dll
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleMainWindow\bin\Debug\SeaBattleMainWindow.pdb
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.csprojAssemblyReference.cache
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.csproj.CoreCompileInputs.cache
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.dll
+D:\4is2\NUZHIN\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.pdb
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleMainWindow\bin\Debug\SeaBattleMainWindow.dll
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleMainWindow\bin\Debug\SeaBattleMainWindow.pdb
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.csproj.AssemblyReference.cache
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.dll
+C:\Users\andre\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.pdb
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleMainWindow\bin\Debug\SeaBattleMainWindow.dll
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleMainWindow\bin\Debug\SeaBattleMainWindow.pdb
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.csprojAssemblyReference.cache
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.dll
+C:\Users\student\Desktop\Компонент — тест little changes\Компонент — тест\SeaBattle\SeaBattleMainWindow\obj\Debug\SeaBattleMainWindow.pdb
