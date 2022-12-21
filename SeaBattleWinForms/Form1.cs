@@ -69,11 +69,6 @@ namespace SeaBattleWinForms
             seaBattleMainWindow.Shoot(sender, e);
         }
 
-        //private void PlacementShipsPlayer(object sender, EventArgs e)
-        //{
-        //    seaBattleMainWindow.PlacementShipsPlayer(MousePosition);
-        //}
-
         private void KeyDownOrientation(object sender, KeyEventArgs e)
         {
             seaBattleMainWindow.KeyOrientation(e);
@@ -82,11 +77,6 @@ namespace SeaBattleWinForms
                 labelOrientation.Text = "горизонтальная";
             else
                 labelOrientation.Text = "вертикальная";
-        }
-
-        private void PlacementShipsPlayer(object sender, DragEventArgs e)
-        {
-            seaBattleMainWindow.PlacementShipsPlayer(MousePosition);
         }
 
         private void ChangeBackColor_Click(object sender, EventArgs e)
@@ -110,9 +100,10 @@ namespace SeaBattleWinForms
             seaBattleMainWindow.UserFontColor = fontDialog1.Color;
         }
 
-        //private void seaBattleMainWindow_DragOver(object sender, DragEventArgs e)
-        //{
-        //    seaBattleMainWindow.DragShip(e);
-        //}
+        private void PlacementShipsPlayer(object sender, EventArgs e)
+        {
+            seaBattleMainWindow.PlacementShipsPlayer(MousePosition);
+        }
+
     }
 }

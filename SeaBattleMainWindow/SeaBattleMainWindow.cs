@@ -13,9 +13,6 @@ namespace SeaBattle
         {
             _cellSize = 30;
             _cellPadding = 3;
-            _x = 0; 
-            _y = 0;
-            _usingMouse = false;
             //клетка не тронута
             _ShipColor.Add(Color.White);
             //кораблики
@@ -121,9 +118,10 @@ namespace SeaBattle
             {
                 CreateParams cp = base.CreateParams;
                 cp.ExStyle |= 0x02000000;
+                
                 return cp;
             }
-        }
+        }   
         
         //художник
         protected override void OnPaint(PaintEventArgs e)
@@ -604,106 +602,25 @@ namespace SeaBattle
         }
 
         private bool PlaceShip = false;
-        private bool _DragAndDrop = false;
-        protected int width = 100;
-        protected int height = 100;
-        protected bool _usingMouse;
-        protected int _x;
-        protected int _y;
-
-        protected int X
-        {
-            get { return _x; }
-            set
-            {
-                if (value < 0) { value = 0; }
-                else
-                {
-                    if (value > Size.Width) { value = Size.Width; }
-                }
-                if (_x != value) //size.width из control
-                {
-                    _x = value;
-                    Invalidate();
-                }
-            }
-        }
-
-        protected int Y
-        {
-            get { return _y; }
-            set
-            {
-                if (value < 0) { value = 0; }
-                else
-                {
-                    if (value > Size.Height) { value = Size.Height; }
-                }
-                if (_y != value)
-                {
-                    _y = value;
-                    Invalidate();
-                }
-            }
-        }
-
-        //Перемещение объекта
-        protected override void OnMouseDown(MouseEventArgs e)
-        {
-            base.OnMouseDown(e);
-
-            X = e.X;
-            Y = e.Y;
-
-            //if (Y >= 390 && Y < 510
-            //        && X >= 33 && X <= 63)
-            //{
-
-            _usingMouse = true;
-                    //MessageBox.Show("tu");
-                
-            //}
-
-        }
-
-        protected override void OnMouseMove(MouseEventArgs e)
-        {
-            base.OnMouseMove(e);
-
-            if (_usingMouse)
-            {
-                X = e.X - width / 2;
-                Y = e.Y - height / 2;
-                Invalidate();
-                //MessageBox.Show("tu");
-            }            
-            //MessageBox.Show(x.ToString() + ' ' + y.ToString());
-        }
-
-        protected override void OnMouseUp(MouseEventArgs e) 
-        {
-            base.OnMouseUp(e);
-            _usingMouse = false;
-        }
 
         //реализация расставления кораблей вручную  
         public void PlacementShipsPlayer(Point MousePos)
         {
             Point MousePos1 = PointToClient(MousePos);
-            int _xCor = Y / (_cellSize + _cellPadding); // норм
-            int _yCor = (X - 430) / (_cellSize + _cellPadding); // норм
+            int _xCor = MousePos1.Y / (_cellSize + _cellPadding); // норм
+            int _yCor = (MousePos1.X - 430) / (_cellSize + _cellPadding); // норм
 
             if (PlaceShip)
             {
-                _xCor = Y / (_cellSize + _cellPadding) - 1;
-                _yCor = X / (_cellSize + _cellPadding) - 1;
+                _xCor = MousePos1.Y / (_cellSize + _cellPadding) - 1;
+                _yCor = (MousePos1.X) / (_cellSize + _cellPadding) - 1;
 
                 if (IsInsideMap(_xCor, _yCor))
                 {
                     currentShip.orientation = _orientation;
                     int valueShip = currentShip.lengthShip;
 
-                    OrientationShip(_yCor, _xCor, valueShip, currentShip.orientation, _playerMap);
+                    OrientationShip(_yCor, _xCor, valueShip, currentShip.orientation);
 
                     //вычесть из списка кол-во кораблей
                     currentShip.countShips[0] -= 1;
@@ -725,18 +642,14 @@ namespace SeaBattle
                     if (currentShip.countShips.Count == 0) PlaceShip = false;
 
                     Invalidate();
-                    //}
                 }
             }
             else
             {
                 //попали на корабль
-                if (Y >= 390 && Y < 510
-                    && X >= 33 && X <= 63)
+                if (MousePos1.Y >= 390 && MousePos1.Y < 510
+                    && MousePos1.X >= 33 && MousePos1.X <= 63)
                 {
-                    _DragAndDrop = true;
-                    _x = X;
-                    _y = Y;
                     MessageBox.Show("Проставьте корабли подряд", "Расстановка началась");
                     if (PlaceShip) PlaceShip = false;
                     else PlaceShip = true;
@@ -748,20 +661,41 @@ namespace SeaBattle
         public void KeyOrientation(KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Z)
-                _orientation = !_orientation;
+                Orientation = !Orientation;
         }
 
         //проверка ориентации
-        protected bool OrientationShip(int i, int j, int valueShip, bool place, EnumCellColor[,] cell)
+        protected bool OrientationShip(int i, int j, int valueShip, bool place)
         {
-            if (!IsInsideMap(i, j)) return false;
-           
-            for (int count = valueShip; count != 0; ++j)
+            if (IsInsideMap(i, j))
             {
-                cell[i, j] = (EnumCellColor)valueShip;
-                --count;
+                if (place)
+                {
+                    for (int count = valueShip; count != 0; ++j)
+                    {
+                        if (j + valueShip > 10)
+                            j -= count + j - 10;
+
+                        _playerMap[i, j] = (EnumCellColor)valueShip;
+                        --count;
+                            
+                    }
+                    return true;
+                }
+                else
+                {
+                    for (int count = valueShip; count != 0; ++i)
+                    {
+                        if (i + valueShip > 10)
+                            i -= count + i - 10;
+
+                        _playerMap[i, j] = (EnumCellColor)valueShip;
+                        --count;
+                    }
+                    return true;
+                }
             }
-            return true;
+            return false;
         }
 
         //проверка поля на наличие кораблей
@@ -783,7 +717,7 @@ namespace SeaBattle
         }
 
         //расстановка кораблей -1 вокруг
-        protected void NerbaryShips(int posX, int posY, int lengthShip, bool orientation, EnumCellColor[,] map)
+        protected void NerbaryShips(int posX, int posY, int lengthShip, bool orientation, EnumCellColor[,] map) 
         {
             //true - вертикальная
             if (orientation)

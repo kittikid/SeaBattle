@@ -154,7 +154,7 @@ namespace SeaBattleWinForms
             this.seaBattleMainWindow.UserBackColor = System.Drawing.Color.LightBlue;
             this.seaBattleMainWindow.UserFontColor = System.Drawing.Color.Black;
             this.seaBattleMainWindow.UserFontFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.seaBattleMainWindow.DragDrop += new System.Windows.Forms.DragEventHandler(this.PlacementShipsPlayer);
+            this.seaBattleMainWindow.Click += new System.EventHandler(this.PlacementShipsPlayer);
             this.seaBattleMainWindow.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PlayerShoot);
             // 
             // Form1
