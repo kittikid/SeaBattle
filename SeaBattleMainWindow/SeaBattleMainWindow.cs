@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Threading;
 using System.Windows.Forms;
 using static SeaBattleMainWindow.Enums;
 
@@ -506,6 +507,13 @@ namespace SeaBattle
                         MessageBoxDefaultButton.Button1,
                         MessageBoxOptions.DefaultDesktopOnly
                         );
+                    isPlaying = false;
+                    _orientation = false;
+                    _playerMap = new EnumCellColor[10, 10];
+                    _botMap = new EnumCellColor[10, 10];
+                    _botBattleAIMap = new EnumCellColor[10, 10];
+                    _ship = new int[10, 10];
+                    playerlifeShips = new List<int> { 4, 6, 6, 4 };
                 }
 
                 if (!CheckIfMapIsNotEmpty(_botMap))
@@ -518,6 +526,13 @@ namespace SeaBattle
                         MessageBoxDefaultButton.Button1,
                         MessageBoxOptions.DefaultDesktopOnly
                         );
+                    isPlaying = false;
+                    _orientation = false;
+                    _playerMap = new EnumCellColor[10, 10];
+                    _botMap = new EnumCellColor[10, 10];
+                    _botBattleAIMap = new EnumCellColor[10, 10];
+                    _ship = new int[10, 10];
+                    playerlifeShips = new List<int> { 4, 6, 6, 4 };
                 }
 
                 if (!CheckIfMapIsNotEmpty(_playerMap) || !CheckIfMapIsNotEmpty(_botMap))
@@ -525,6 +540,12 @@ namespace SeaBattle
                     ClearMap(_botMap);
                     ClearMap(_playerMap);
                     isPlaying = false;
+                    _orientation = false;
+                    _playerMap = new EnumCellColor[10, 10];
+                    _botMap = new EnumCellColor[10, 10];
+                    _botBattleAIMap = new EnumCellColor[10, 10];
+                    _ship = new int[10, 10];
+                    playerlifeShips = new List<int> { 4, 6, 6, 4 }; 
                 }
             }
             Invalidate();
@@ -779,7 +800,7 @@ namespace SeaBattle
                 }
             }
         }
-
+            
         //нормалихация матрицы после расстановки кораблей
         protected void Normalized(EnumCellColor[,] map)
         {

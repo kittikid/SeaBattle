@@ -41,7 +41,6 @@ namespace SeaBattleWinForms
 
         private void GameIsStart(object sender, EventArgs e)
         {
-
             if (!seaBattleMainWindow.isPlaying)
             {
                 seaBattleMainWindow.isPlaying = true;
@@ -57,7 +56,7 @@ namespace SeaBattleWinForms
 
         }
 
-        public void SwitchButtons(bool value)
+        public void SwitchButtons(bool value)   
         {
             PlayerRandomButton.Enabled = value;
             BotRandomButton.Enabled = value;
